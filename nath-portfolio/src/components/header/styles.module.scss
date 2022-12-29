@@ -1,0 +1,51 @@
+header {
+  background-color: var(--background-color);
+}
+.warrapHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 75px;
+  background-color: #f5f4ef;
+  .warrapLogo {
+    height: 75px;
+    img {
+      height: 75px;
+      width: 100%;
+      animation: giro 3s ease-in-out infinite;
+    }
+  }
+  .navigation {
+    ul {
+      display: flex;
+      gap: 20px;
+
+      li {
+        list-style: none;
+        font-weight: 600;
+        font-size: 1rem;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      li:first-child {
+        &:hover {
+          color: var(--color-7);
+        }
+      }
+      li:last-child {
+        &:hover {
+          color: var(--color-1);
+        }
+      }
+    }
+  }
+}
+@keyframes giro {
+  from{
+    transform: rotateY(0);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}

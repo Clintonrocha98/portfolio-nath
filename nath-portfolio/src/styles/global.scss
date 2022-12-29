@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Source Serif Pro", sans-serif;
+
+  --background-color: #f7f4ef;
+
+  --color-1: #f8a99e;
+  --color-2: #75beef;
+  --color-3: #8dd87d;
+  --color-4: #fe966e;
+  --color-5: #b4c6f9;
+  --color-6: #fdbb64;
+  --color-7: #dd87ff;
+  --color-8: #ffe561;
+
+  --button-1: #ff5757;
+  --button-2: #340100;
+  --button-3: #31a8ff;
+  --button-4: #49021f;
+  --button-5: #12b54a;
+
+  --font-1: #ffffff;
+  --font-2: #fe9900;
+  --font-3: #001e36;
+  --font-4: #ff3366;
+  --font-5: #050000;
+}
