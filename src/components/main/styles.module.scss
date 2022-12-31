@@ -1,11 +1,12 @@
 main {
-  height: calc(100vh - 75px);
+  height: calc(100vh - 327px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   animation: color-change-3x 10s linear infinite alternate both;
   background-color: #e9d1ce;
   overflow: hidden;
+  border-bottom: 2px solid rgb(177, 79, 79);
 }
 
 .warrapMain {
@@ -23,7 +24,7 @@ main {
       font-size: 2rem;
       font-weight: 700;
       line-height: 30px;
-      animation: Slow 2s ease-in-out;
+      animation: Slow 1.5s ease-in-out;
     }
 
     p {
@@ -32,7 +33,7 @@ main {
       line-height: 30px;
       opacity: 0;
       transform: translateX(-500px);
-      animation: Slow 2s ease-in-out forwards;
+      animation: Slow 1.5s ease-in-out forwards;
       animation-delay: 2s;
     }
     .warrapButtons {
@@ -53,7 +54,6 @@ main {
         animation: Slow 2s ease-in-out forwards;
         &:hover {
           cursor: pointer;
-          scale: 1.1;
         }
       }
       button:nth-child(1) {
@@ -112,7 +112,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: SlowReverse 8s ease-in-out forwards;
+    animation: SlowReverse 2s ease-in-out forwards;
     img {
       width: 300px;
       height: 380px;
@@ -138,6 +138,17 @@ main {
     z-index: 1;
     border-radius: 50%;
     border: 1px solid black;
+  }
+}
+@keyframes font-color-3x {
+  0% {
+    color:var(--font-1);
+  }
+  50% {
+    color:var(--font-2);
+  }
+  100% {
+    color:var(--font-3);
   }
 }
 @keyframes color-change-3x {

@@ -1,5 +1,6 @@
 header {
   background-color: var(--background-color);
+  border-bottom: 2px solid rgb(177, 79, 79);
 }
 .warrapHeader {
   display: flex;
@@ -22,30 +23,25 @@ header {
 
       li {
         list-style: none;
-        font-weight: 600;
-        font-size: 1rem;
-        &:hover {
-          cursor: pointer;
-        }
-      }
-      li:first-child {
-        &:hover {
-          color: var(--color-7);
-        }
-      }
-      li:last-child {
-        &:hover {
-          color: var(--color-1);
+        a {
+          font-weight: 600;
+          font-size: 1rem;
+          text-decoration: none;
+          color: black;
+          &:hover {
+            cursor: pointer;
+            color: var(--color-1);
+          }
         }
       }
     }
   }
 }
 @keyframes giro {
-  from{
+  from {
     transform: rotateY(0);
   }
-  to{
+  to {
     transform: rotateY(360deg);
   }
 }

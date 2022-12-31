@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 :root {
   font-family: "Source Serif Pro", sans-serif;
@@ -18,6 +19,8 @@
   --color-6: #fdbb64;
   --color-7: #dd87ff;
   --color-8: #ffe561;
+  --color-9: #ec6f5f;
+  --color-10: #f3aba1;
 
   --button-1: #ff5757;
   --button-2: #340100;

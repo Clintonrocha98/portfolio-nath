@@ -1,7 +1,6 @@
 import logo from "../../../public/logo.webp";
 import styles from "./styles.module.scss";
 
-
 export function Header({ className }) {
   return (
     <>
@@ -12,8 +11,12 @@ export function Header({ className }) {
           </div>
           <nav className={styles.navigation}>
             <ul>
-              <li>Projetos</li>
-              <li>Contato</li>
+              <li>
+                <a href="#projetos">Projetos</a>
+              </li>
+              <li>
+                <a href="#contato">Contato</a>
+              </li>
             </ul>
           </nav>
         </div>

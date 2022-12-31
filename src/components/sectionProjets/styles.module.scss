@@ -1,0 +1,120 @@
+section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--color-9);
+  position: relative;
+  z-index: 1;
+
+  .warrapProjets {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    color: white;
+    h1 {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      li {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        font-size: 3rem;
+        font-weight: 900;
+
+        svg {
+          display: none;
+          animation: HoverSVG 0.5s ease-in-out;
+        }
+        &:hover {
+          cursor: pointer;
+          svg {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+.Background {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  overflow-x: hidden;
+}
+
+.defaultBackground {
+  background-color: var(--color-9);
+}
+.cartoes {
+  background: url("../../../public/img/cartão/cartão(1).webp"), var(--color-9);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: BgAnimation 2s ease-in-out both;
+}
+.identidadeVisual {
+  background: url("../../../public/img/identidade-visual/identidade-visual(3).webp"),
+    var(--color-9);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: BgAnimation 2s ease-in-out both;
+}
+.cardapio {
+  background: url("../../../public/img/menu/menu(1).webp"), var(--color-9);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: BgAnimation 2s ease-in-out both;
+}
+.socialMidia {
+  background: url("../../../public/img/social-midia/social-midia(1).webp"),
+    var(--color-9);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: BgAnimation 2s ease-in-out both;
+  overflow-x: hidden;
+}
+.outros {
+  background: url("../../../public/img/outros/outros(1).webp"), var(--color-9);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: BgAnimation 2s ease-in-out both;
+}
+@keyframes HoverSVG {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes BgAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100%{
+    background-size: 75%;
+  }
+}
