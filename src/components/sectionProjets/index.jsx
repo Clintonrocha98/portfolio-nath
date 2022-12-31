@@ -7,26 +7,20 @@ export function Projets({ className }) {
 
   function BackgroundChange(text) {
     if (text.target.innerText === "Cartões") {
-      return styles.cartoes;
+      return setBackground(styles.cartoes);
     }
     if (text.target.innerText === "Identidade Visual") {
-      return styles.identidadeVisual;
+      return setBackground(styles.identidadeVisual);
     }
     if (text.target.innerText === "Cardápios") {
-      return styles.cardapio;
+      return setBackground(styles.cardapio);
     }
     if (text.target.innerText === "Social Midia") {
-      return styles.socialMidia;
+      return setBackground(styles.socialMidia);
     }
     if (text.target.innerText === "Outros") {
-      return styles.outros;
+      return setBackground(styles.outros);
     }
-  }
-  function HoverOption(e) {
-    setBackground(BackgroundChange(e));
-  }
-  function MouseOut() {
-    setBackground(styles.defaultBackground);
   }
 
   return (
@@ -40,36 +34,36 @@ export function Projets({ className }) {
           <h1>Projetos</h1>
           <ul>
             <li
-              onMouseEnter={(e) => HoverOption(e)}
-              onMouseOut={() => MouseOut()}
+              onMouseEnter={(e) => BackgroundChange(e)}
+              onMouseOut={() => setBackground(styles.defaultBackground)}
             >
               <BiChevronsRight size={30} />
               Cartões
             </li>
             <li
-              onMouseEnter={(e) => HoverOption(e)}
-              onMouseOut={() => MouseOut()}
+              onMouseEnter={(e) => BackgroundChange(e)}
+              onMouseOut={() => setBackground(styles.defaultBackground)}
             >
               <BiChevronsRight size={30} />
               Identidade Visual
             </li>
             <li
-              onMouseEnter={(e) => HoverOption(e)}
-              onMouseOut={() => MouseOut()}
+              onMouseEnter={(e) => BackgroundChange(e)}
+              onMouseOut={() => setBackground(styles.defaultBackground)}
             >
               <BiChevronsRight size={30} />
               Cardápios
             </li>
             <li
-              onMouseEnter={(e) => HoverOption(e)}
-              onMouseOut={() => MouseOut()}
+              onMouseEnter={(e) => BackgroundChange(e)}
+              onMouseOut={() => setBackground(styles.defaultBackground)}
             >
               <BiChevronsRight size={30} />
               Social Midia
             </li>
             <li
-              onMouseEnter={(e) => HoverOption(e)}
-              onMouseOut={() => MouseOut()}
+              onMouseEnter={(e) => BackgroundChange(e)}
+              onMouseOut={() => setBackground(styles.defaultBackground)}
             >
               <BiChevronsRight size={30} />
               Outros
