@@ -95,6 +95,28 @@ section {
   background-repeat: no-repeat;
   animation: BgAnimation 2s ease-in-out both;
 }
+@media (max-width: 850px) {
+  section {
+    .warrapProjets {
+      ul {
+        li {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 450) {
+  section {
+    .warrapProjets {
+      ul {
+        li {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}
 @keyframes HoverSVG {
   0% {
     opacity: 0;
@@ -114,7 +136,7 @@ section {
     opacity: 1;
     transform: translateX(0);
   }
-  100%{
+  100% {
     background-size: 75%;
   }
 }

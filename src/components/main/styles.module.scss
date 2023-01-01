@@ -142,13 +142,13 @@ main {
 }
 @keyframes font-color-3x {
   0% {
-    color:var(--font-1);
+    color: var(--font-1);
   }
   50% {
-    color:var(--font-2);
+    color: var(--font-2);
   }
   100% {
-    color:var(--font-3);
+    color: var(--font-3);
   }
 }
 @keyframes color-change-3x {
@@ -187,8 +187,35 @@ main {
 @media (max-width: 1200px) {
   .warrapMain {
     flex-direction: column-reverse;
+
     .sobre {
       width: 100%;
+      gap: 5px;
+      p {
+        font-size: 1.1rem;
+      }
+    }
+    .warrapImage {
+      img {
+        width: 250px;
+        height: 300px;
+      }
+    }
+    .warrapImage::before {
+      width: 270px;
+      height: 320px;
+    }
+  }
+}
+@media (max-width: 730px) {
+  .warrapMain {
+    .sobre {
+      .warrapButtons {
+        button {
+          font-weight: 600;
+          font-size: 1rem;
+        }
+      }
     }
   }
 }

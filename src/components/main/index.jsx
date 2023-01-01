@@ -1,10 +1,12 @@
 import styles from "./styles.module.scss";
 import perfil from '../../../public/perfil.webp'
+import { SocialMidiaButtons } from "../social-midia-buttons";
 
 export function Main({ className }) {
   return (
     <>
       <main>
+      <SocialMidiaButtons></SocialMidiaButtons>
         <div className={`${className} ${styles.warrapMain}`}>
           <div className={styles.sobre}>
             <h1>Sobre mim</h1>

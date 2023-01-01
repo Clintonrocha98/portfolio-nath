@@ -22,10 +22,31 @@ export function Projets({ className }) {
       return setBackground(styles.outros);
     }
   }
-
+  const projets = [
+    {
+      id: 0,
+      name: "Cartões",
+    },
+    {
+      id: 1,
+      name: "Identidade Visual",
+    },
+    {
+      id: 2,
+      name: "Cardápios",
+    },
+    {
+      id: 3,
+      name: "Social Midia",
+    },
+    {
+      id: 4,
+      name: "Outros",
+    },
+  ];
   return (
     <>
-      <section id="projetos">
+      <section>
         <div
           loading="auto"
           className={`${styles.Background} ${background}`}
@@ -33,43 +54,19 @@ export function Projets({ className }) {
         <div className={`${className} ${styles.warrapProjets}`}>
           <h1>Projetos</h1>
           <ul>
-            <li
-              onMouseEnter={(e) => BackgroundChange(e)}
-              onMouseOut={() => setBackground(styles.defaultBackground)}
-            >
-              <BiChevronsRight size={30} />
-              Cartões
-            </li>
-            <li
-              onMouseEnter={(e) => BackgroundChange(e)}
-              onMouseOut={() => setBackground(styles.defaultBackground)}
-            >
-              <BiChevronsRight size={30} />
-              Identidade Visual
-            </li>
-            <li
-              onMouseEnter={(e) => BackgroundChange(e)}
-              onMouseOut={() => setBackground(styles.defaultBackground)}
-            >
-              <BiChevronsRight size={30} />
-              Cardápios
-            </li>
-            <li
-              onMouseEnter={(e) => BackgroundChange(e)}
-              onMouseOut={() => setBackground(styles.defaultBackground)}
-            >
-              <BiChevronsRight size={30} />
-              Social Midia
-            </li>
-            <li
-              onMouseEnter={(e) => BackgroundChange(e)}
-              onMouseOut={() => setBackground(styles.defaultBackground)}
-            >
-              <BiChevronsRight size={30} />
-              Outros
-            </li>
+            {projets.map((projet) => (
+              <li
+                key={projet.id}
+                onMouseEnter={(e) => BackgroundChange(e)}
+                onMouseOut={() => setBackground(styles.defaultBackground)}
+              >
+                <BiChevronsRight size={30} />
+                {projet.name}
+              </li>
+            ))}
           </ul>
         </div>
+        
       </section>
     </>
   );

@@ -5,7 +5,7 @@ header {
 .warrapHeader {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 75px;
   background-color: #f5f4ef;
   .warrapLogo {
@@ -14,26 +14,6 @@ header {
       height: 75px;
       width: 100%;
       animation: giro 3s ease-in-out infinite;
-    }
-  }
-  .navigation {
-    ul {
-      display: flex;
-      gap: 20px;
-
-      li {
-        list-style: none;
-        a {
-          font-weight: 600;
-          font-size: 1rem;
-          text-decoration: none;
-          color: black;
-          &:hover {
-            cursor: pointer;
-            color: var(--color-1);
-          }
-        }
-      }
     }
   }
 }

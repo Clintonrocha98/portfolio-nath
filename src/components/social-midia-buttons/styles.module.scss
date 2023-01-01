@@ -1,0 +1,49 @@
+a {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.social {
+  position: fixed;
+  top: 80px;
+  z-index: 3;
+}
+.social ul {
+  padding: 0px;
+  transform: translate(-260px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: rgba(0, 0, 0, 0.36);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 30px 30px 0;
+  transition: all 1s;
+}
+.social ul li:hover {
+  transform: translate(110px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.36);
+  transform: rotate(360deg);
+  transition: all 1s;
+}
+.social ul li span {
+  margin-left: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  transform: rotate(0deg);
+}
